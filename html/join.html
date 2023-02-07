@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAVER JOIN PAGE</title>
+  <link rel="stylesheet" href="../css/join.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1 class="logo">
+        <a href="../html/index.html">
+          <img width="250" src="../images/logoo.png" alt="naver logo">
+        </a>
+      </h1>
+    </header>
+
+    <section>
+      <div class="sine-up">
+
+        <div class="id box">
+          <h3>
+            <label for="id">아이디</label>
+          </h3>
+          <div class="inputbox">
+            <input id="id" type="text" name="userid">
+            <div class="email">@naver.com</div>
+          </div>
+          <span class="id-error-box">필수 정보입니다.</span>
+        </div>
+
+        <div class="pw box">
+          <h3>
+            <label for="pw">비밀번호</label>
+          </h3>
+          <div class="inputbox">
+            <input id="pw" type="password" name="pw">
+            <div><img src="../images/m_icon_pw_step_01.png"></div>
+          </div>
+          <span id="error-box"></span>
+        </div>
+
+        <div class="re-pw box">
+          <h3>
+            <label for="re-pw">비밀번호 재확인</label>
+          </h3>
+          <div class="inputbox">
+            <input type="password" name="re-pw">
+            <div id="repw-img"><img src="../images/m_icon_pw_step_02.png"></div>
+          </div>
+          <span id="error-box"></span>
+        </div>
+
+        <div class="name box">
+          <h3>
+            <label for="name">이름</label>
+          </h3>
+          <div class="inputbox">
+            <input type="text" name="text">
+          </div>
+          <span id="error-box"></span>
+        </div>
+
+        <div class="birth-wrapper box">
+          <h3>
+            <label for="name">생년월일</label>
+          </h3>
+          
+          <div class="inputbox birth-box">
+            <p class="year">
+              <input type="text" name="year" placeholder="년(4자)">
+            </p>
+              <select id="birth-month">
+                <option>월</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+                <option value="">11</option>
+                <option value="">12</option>
+              </select>
+            <p class="days">
+              <input type="text" name="days" placeholder="일">
+            </p>
+          </div>
+          <span id="error-box"></span>
+        </div>
+
+        <div class="sex box">
+          <h3>
+            <label for="name">성별</label>
+          </h3>
+          <div class="inputbox sex-box">
+            <div class="sex-list">
+              <input type="radio">
+              <p>남자</p>
+            </div>
+            <div class="sex-list">
+              <input type="radio">
+              <p>여자</p>
+            </div>
+            <div class="sex-list"> 
+              <input type="radio">
+              <p>선택안함</p>
+            </div>
+          </div>
+          <span id="error-box"></span>
+        </div>
+
+        <div class="check-email box">
+          <h3 class="email-text">
+            <label for="name">본인 확인 이메일</label>
+            <span class="choice">(선택)</span>
+          </h3>
+          <div class="inputbox">
+            <input type="text" name="text" placeholder="선택입력">
+          </div>
+        </div>
+
+        <div class="slef-phone box">
+          <h3>
+            <label for="name">휴대전화</label>
+          </h3>
+          <div class="tel">
+            <div class="local">
+              <select name="number" id="tel-number">
+                <option>대한민국 +82</option>
+                <option>미역국 +82</option>
+                <option>된장국 +82</option>
+              </select>
+            </div>
+            <div class="find-wrapper">
+              <div class="find-box">
+                <input type="text" name="text" placeholder="전화번호 입력">
+                <button class="green-box" type="button">인증번호 받기</button>
+              </div>
+            </div>
+            <input class="code" type="text" name="text" placeholder="인증번호 입력하세요">
+          </div>
+          <span id="error-box"></span>
+        </div>
+
+        <div class="adress box">
+          <h3>
+            <label for="name">주소</label>
+          </h3>
+          <div>
+            <div class="find-box post">
+              <input type="text" name="text" placeholder="우편번호">
+              <button class="green-box" type="button">우편번호 찾기</button>
+            </div>
+            <div class="adress-list">
+              <input type="text" name="text" placeholder="도로명주소">
+              <input type="text" name="text" placeholder="지번주소">
+              <input type="text" name="text" placeholder="상세주소">
+              <input type="text" name="text" placeholder="참고항목">
+            </div>
+          </div>
+          <span id="error-box"></span>
+        </div>
+
+        <div class="footer-btn">
+          <button type="submit">가입하기</button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="../js/join.js"></script>
+</body>
+</html>
